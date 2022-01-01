@@ -1,0 +1,143 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: url(new\ year.jpeg) center center / cover no-repeat;;
+}
+.max{
+    color: #fff;
+    font-size: 25px;
+    font-family: "Comic Sans MS",cursive,sans-serif;
+    padding:10px ;
+}
+.machine {
+    transform-origin: 50vw 50vh;
+    transform: translate(2%,70%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:250px;
+}
+
+
+.set {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden; 
+    background:  transparent;
+    color: #ddd;
+    box-shadow: 2px 5px 10px transparent;
+    
+}
+
+.set .blk {
+    position: absolute;
+    font-size: 5rem;
+    
+    display: inline-block;
+    width: 24vw;
+    height: 24vw;
+    text-align: center;
+    
+    top: 0;
+}
+
+.num {   
+    transform: translateY(0rem);
+    /* animation: srl .2s linear 0s 1 forwards; */
+    animation: srl 10s linear 0s 1 forwards;
+}
+
+.num, .numx {   
+    text-shadow: 5px 5px 10px #aaa;
+}
+
+.set .blk:nth-child(1) {
+    top: 0;
+    border: 1px solid  transparent;
+}
+
+.set .blk:nth-child(2) {
+    top: 6rem;
+}
+
+@keyframes srl {
+    from {
+        transform: translateY(0rem);
+    }
+    to {
+        transform: translateY(-6rem);
+    }
+}
+.viktor
+{
+    position: relative;
+    display: flex;
+}
+.viktor span
+{
+    color: #fff;
+    padding: 17pxpx;
+    margin: 0 12px;
+    font-size: 3.5em;
+    font-weight: bolder;
+     animation: animate 2.6s linear infinite;
+    font-family: sans-serif;
+    font-style:  italic;
+}
+.viktor span:nth-child(1)
+{
+    animation-delay: 0s;
+}
+.viktor span:nth-child(2)
+{
+    animation-delay: 0.2s;
+}
+.viktor span:nth-child(3)
+{
+    animation-delay: 0.4s;
+}
+.viktor span:nth-child(4)
+{
+    animation-delay: 0.7s;
+}
+.viktor span:nth-child(5)
+{
+    animation-delay: 0.8s;
+}
+.viktor span:nth-child(6)
+{
+    animation-delay: 1s;
+}
+.viktor span:nth-child(8)
+{
+    animation-delay: 1.5s;
+}
+@keyframes animate
+{
+    0%
+    {
+        text-shadow: 0 9px 20px rgba(0,0,0,0);
+        transform: scale(1);
+    }
+    40%
+    {
+        text-shadow: 0 18px 24px rgba(0,0,0,0.2);
+        transform: scale(1.4);
+    }
+    70%,100%
+    {
+        text-shadow: 0 20px 32px rgba(0,0,0,0,2);
+        transform: scale(1);
+    }
+}
+.hack{
+    color: whitesmoke;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
